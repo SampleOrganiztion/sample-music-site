@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0894db3b48.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="music-app">
+            <div class="navigate">
+                <i class="fa-solid fa-angle-left"></i>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="album">
+                <h1 id="album-name">Song Name</h1>
+                <div class="album-img-box">
+                    <img src="52994020588_5ec850591d_c.jpg" alt="" id="album-img">
+                </div>
+            </div>
+
+            <div class="audio-track">
+                <audio id="song">
+                    <source src="Naa-Ready.mp3" />
+                </audio>
+
+                <div class="track-controls">
+                    <span id="start-time">0:00</span>
+                    <input type="range" id="track-bar" value="0"/>
+                    <span id="end-time">0:00</span>
+                </div>
+            </div>
+
+            <div class="song-controls">
+                <i class="fa-solid fa-backward"></i>
+                <i class="fa-solid fa-play" id="play-pause"></i>
+                <i class="fa-solid fa-forward"></i>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

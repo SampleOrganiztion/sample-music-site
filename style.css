@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music-app {
+    width: 100%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.2px);
+    -webkit-backdrop-filter: blur(6.2px);
+    border: 1px solid rgba(255, 255, 255, 0.49);
+    padding: 10px;
+}
+
+.navigate {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigate i {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background-color: #FF9A8B;
+    padding: 10px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.album {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#album-name {
+    text-align: center;
+    font-weight: 600;
+}
+
+.album-img-box {
+    margin: 10px;
+    width: 50%;
+}
+
+.album-img-box img {
+    width: 90%;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+}
+
+.album-img-box img::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 8px solid rgba(0, 0, 0, 0.1);
+}
+
+.audio-track {
+    margin: 10px;
+}
+
+.track-controls {
+    display: flex;
+    align-items: center;
+}
+
+#track-bar {
+    flex: 1;
+}
+
+.track-controls span {
+    display: inline-flex;
+    margin: 0 10px;
+}
+
+.song-controls {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.song-controls i {
+    margin: 0 10px;
+    background-color: #FF9A8B;
+    padding: 10px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.song-controls i:nth-child(2) {
+    width: 80px;
+    height: 80px;
+    font-size: 35px;
+}
