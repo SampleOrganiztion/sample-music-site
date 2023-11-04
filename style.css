@@ -58,12 +58,14 @@
 }
 
 .album-img-box {
+    width: 400px;
+    height: 400px;
     margin: 10px;
-    width: 50%;
 }
 
 .album-img-box img {
-    width: 90%;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     margin: 0 auto;
     display: block;
